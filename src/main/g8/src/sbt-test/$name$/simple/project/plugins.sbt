@@ -1,0 +1,1 @@
+addSbtPlugin("$organization$" % "$name$" % "$version$")

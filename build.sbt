@@ -1,3 +1,3 @@
-seq(giter8Settings :_*)
+giter8Settings
 
 ScriptedPlugin.scriptedBufferLog := false

@@ -8,7 +8,7 @@ version := "$version$"
 
 scalacOptions := Seq("-deprecation", "-unchecked")
 
-seq(ScriptedPlugin.scriptedSettings: _*)
+ScriptedPlugin.scriptedSettings
 
 ScriptedPlugin.scriptedBufferLog := false
 
@@ -18,3 +18,5 @@ initialCommands in console := Seq(
   "$organization$"
 ).map{"import " + _ + "._"}.mkString("\n")
 
+libraryDependencies ++= Seq(
+)

@@ -4,7 +4,7 @@ import sbt._,Keys._
 
 object Plugin extends sbt.Plugin{
 
-  val $name$Settings:Seq[sbt.Project.Setting[_]] = seq()
+  val $name$Settings: Seq[Def.Setting[_]] = Seq()
 
 }
 

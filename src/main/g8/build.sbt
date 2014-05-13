@@ -6,11 +6,7 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalacOptions := Seq("-deprecation", "-unchecked")
-
-ScriptedPlugin.scriptedSettings
-
-ScriptedPlugin.scriptedBufferLog := false
+scalacOptions := Seq("-deprecation", "-unchecked", "-language:_")
 
 watchSources <++= (sbtTestDirectory).map{ dir => (dir ***).get }
 
